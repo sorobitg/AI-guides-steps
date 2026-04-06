@@ -1,64 +1,215 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css">
-    <title>Freedom Launch Accelerator (AI GUIDE)</title>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Your AI Agency Roadmap</title>
+    <meta
+      name="description"
+      content="Follow these 10 steps to build and launch your AI agency. Each step includes interactive tools, checklists, and templates."
+    />
+    <link rel="stylesheet" href="../assets/style.css" />
+    <style>
+      /* page-only styles */
+      .progress {
+        height: 12px;
+        border-radius: 999px;
+        border: 1px solid var(--border);
+        background: rgba(0, 0, 0, 0.25);
+        overflow: hidden;
+      }
+      .progress .bar {
+        height: 100%;
+        width: 0%;
+        background: linear-gradient(
+          90deg,
+          rgba(124, 92, 255, 0.95),
+          rgba(34, 197, 94, 0.75)
+        );
+      }
+      .pill {
+        display: inline-block;
+        font-size: 12px;
+        color: var(--muted);
+        border: 1px solid var(--border);
+        padding: 2px 10px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.03);
+        margin-right: 10px;
+      }
+      .why {
+        margin-top: 10px;
+        color: var(--muted);
+        font-size: 13px;
+        padding: 10px 12px;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        background: rgba(0, 0, 0, 0.1);
+      }
+      .navlinks {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+    </style>
+  </head>
+
+  <body>
     <div class="wrap">
-        <header class="topbar">
-            <div class="brand">Freedom Launch Accelerator (AI GUIDE)</div>
-            <nav>
-                <a href="#">The Guide</a>
-                <a href="#">Tools</a>
-                <a href="/">Back to Home</a>
-            </nav>
-        </header>
-        <main>
-            <section class="hero">
-                <h1 class="h1">Your AI Agency Roadmap</h1>
-                <p class="sub">Follow these 10 steps to build and launch your AI agency. Each step includes interactive tools, checklists, and templates.</p>
-            </section>
-            <section class="progress">
-                <h2>Overall Progress</h2>
-                <p>0%</p>
-            </section>
-            <section class="cards">
-                <div class="card">
-                    <h3>GoHighLevel Extended Free Trial</h3>
-                    <a href="https://www.gohighlevel.com/?fp_ref=praos-group87" class="btn primary">Get Trial</a>
-                </div>
-                <div class="card">
-                    <h3>Community</h3>
-                    <a href="#" class="btn secondary">Join Now</a>
-                </div>
-            </section>
-            <section class="steps">
-                <h2>10 Steps to Launch Your AI Agency</h2>
-                <ol>
-                    <li class="step"><span class="num">1.</span> Step 1 — Duration: XX days<br>Why This Matters: [Provide Reason]</li>
-                    <li class="step"><span class="num">2.</span> Step 2 — Duration: XX days<br>Why This Matters: [Provide Reason]</li>
-                    <li class="step"><span class="num">3.</span> Step 3 — Duration: XX days<br>Why This Matters: [Provide Reason]</li>
-                    <li class="step"><span class="num">4.</span> Step 4 — Duration: XX days<br>Why This Matters: [Provide Reason]</li>
-                    <li class="step"><span class="num">5.</span> Step 5 — Duration: XX days<br>Why This Matters: [Provide Reason]</li>
-                    <li class="step"><span class="num">6.</span> Step 6 — Duration: XX days<br>Why This Matters: [Provide Reason]</li>
-                    <li class="step"><span class="num">7.</span> Step 7 — Duration: XX days<br>Why This Matters: [Provide Reason]</li>
-                    <li class="step"><span class="num">8.</span> Step 8 — Duration: XX days<br>Why This Matters: [Provide Reason]</li>
-                    <li class="step"><span class="num">9.</span> Step 9 — Duration: XX days<br>Why This Matters: [Provide Reason]</li>
-                    <li class="step"><span class="num">10.</span> Step 10 — Duration: XX days<br>Why This Matters: [Provide Reason]</li>
-                </ol>
-            </section>
-            <section class="cta">
-                <p>Ready to get started?</p>
-                <a href="#" class="btn primary">Start Step 1</a>
-                <a href="https://www.gohighlevel.com/?fp_ref=praos-group87" class="btn secondary">Get Extended Free Trial</a>
-            </section>
-        </main>
-        <footer class="footer">
-            <p>© 2026 Sisy Orobitg</p>
-        </footer>
+      <div class="topbar">
+        <div class="brand">
+          <span>Freedom Launch Accelerator</span>
+          <span class="badge">(AI GUIDE)</span>
+        </div>
+
+        <div class="navlinks">
+          <a class="btn" href="#">The Guide</a>
+          <a class="btn" href="#">Tools</a>
+          <a class="btn" href="../">← Back to Home</a>
+          <a class="btn primary" href="#community">#1 AI Agency Community</a>
+          <a class="btn" href="https://www.gohighlevel.com/?fp_ref=praos-group87">Get Free Trial</a>
+        </div>
+      </div>
+
+      <div class="card hero">
+        <div class="inner">
+          <h1 class="h1">Your AI Agency Roadmap</h1>
+          <p class="sub">
+            Follow these 10 steps to build and launch your AI agency. Each step includes interactive tools, checklists, and templates.
+          </p>
+
+          <div style="margin-top: 16px">
+            <div class="small" style="margin-bottom: 8px">Overall Progress</div>
+            <div class="progress" aria-label="Overall Progress">
+              <div class="bar" style="width: 0%"></div>
+            </div>
+            <div class="small" style="margin-top: 6px">0%</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top: 14px">
+        <div class="inner" style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px">
+          <div>
+            <div class="section-title" style="margin:0 0 4px">
+              <h2 style="margin:0">Need GoHighLevel? Get an Extended Free Trial</h2>
+            </div>
+            <div class="small">Start building your agency with the #1 platform for AI automation</div>
+          </div>
+          <a class="btn primary" href="https://www.gohighlevel.com/?fp_ref=praos-group87">Start Free Trial →</a>
+        </div>
+      </div>
+
+      <div class="card" id="community" style="margin-top: 14px">
+        <div class="inner" style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px">
+          <div>
+            <div class="section-title" style="margin:0 0 4px">
+              <h2 style="margin:0">Need Help? Join Our Free Community</h2>
+            </div>
+            <div class="small">Thousands of members • Weekly coaching • Free forever</div>
+          </div>
+          <a class="btn secondary" href="#">Join Now →</a>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top: 14px">
+        <div class="inner">
+          <div class="section-title"><h2>Roadmap Steps</h2><span class="small">10 steps</span></div>
+
+          <ol class="steps">
+            <li class="step">
+              <div class="k"><div class="num">1</div><h3>Set Up Your GoHighLevel Account</h3></div>
+              <p><span class="pill">30–45 minutes</span>Create and configure your GoHighLevel agency account, connect Stripe, and set a custom domain.</p>
+              <div class="why"><strong>Why This Matters:</strong> Your platform setup determines how fast you can onboard clients and how professional you look. A clean foundation prevents costly rebuilds later.</div>
+              <div class="actions"><a class="btn primary" href="#">Start</a></div>
+            </li>
+
+            <li class="step">
+              <div class="k"><div class="num">2</div><h3>Understand the AI Agency Business Model</h3></div>
+              <p><span class="pill">15–20 minutes</span>Learn where AI creates leverage for local businesses (lead capture, follow‑up, booking, retention) and how agencies charge for outcomes.</p>
+              <div class="why"><strong>Why This Matters:</strong> If you sell “automation,” you compete on price. If you sell outcomes (appointments, revenue, time saved), you become premium and easier to close.</div>
+              <div class="actions"><a class="btn primary" href="#">Start</a></div>
+            </li>
+
+            <li class="step">
+              <div class="k"><div class="num">3</div><h3>Choose Your Target Niche</h3></div>
+              <p><span class="pill">20–30 minutes</span>Pick a niche where missed calls and slow responses cost money and where your offer can be explained in one sentence.</p>
+              <div class="why"><strong>Why This Matters:</strong> A niche gives you clearer messaging, faster outreach, and repeatable delivery—so you can scale instead of reinventing every client.</div>
+              <div class="actions"><a class="btn primary" href="#">Start</a></div>
+            </li>
+
+            <li class="step">
+              <div class="k"><div class="num">4</div><h3>Find Target Businesses with Google Maps</h3></div>
+              <p><span class="pill">45–60 minutes</span>Build a list of 50+ qualified prospects (name, phone, site, reviews) and note why each is a fit.</p>
+              <div class="why"><strong>Why This Matters:</strong> No pipeline = no agency. A prospect list gives you daily targets and turns growth into a measurable routine.</div>
+              <div class="actions"><a class="btn primary" href="#">Start</a></div>
+            </li>
+
+            <li class="step">
+              <div class="k"><div class="num">5</div><h3>Outreach Strategy & Pricing</h3></div>
+              <p><span class="pill">30–40 minutes</span>Set pricing, define your core package, and create simple scripts (DM/email/call) that book appointments.</p>
+              <div class="why"><strong>Why This Matters:</strong> You can’t scale on “custom quotes.” Clear pricing + a repeatable script is what converts attention into paid clients.</div>
+              <div class="actions"><a class="btn primary" href="#">Start</a></div>
+            </li>
+
+            <li class="step">
+              <div class="k"><div class="num">6</div><h3>Maximize Revenue: Websites & AI Ads</h3></div>
+              <p><span class="pill">25–35 minutes</span>Add upsells that increase LTV (smart websites, ads, content/video) without making delivery complicated.</p>
+              <div class="why"><strong>Why This Matters:</strong> Lead capture is valuable, but lead generation multiplies results. Upsells can double revenue per client with minimal extra work.</div>
+              <div class="actions"><a class="btn primary" href="#">Start</a></div>
+            </li>
+
+            <li class="step">
+              <div class="k"><div class="num">7</div><h3>Set Up Client Sub‑Accounts</h3></div>
+              <p><span class="pill">20–30 minutes per client</span>Create sub‑accounts with branding, phone numbers, calendars, pipelines, permissions, and rebilling.</p>
+              <div class="why"><strong>Why This Matters:</strong> This is your scaling layer. Sub‑accounts keep clients isolated and make onboarding a checklist you can delegate.</div>
+              <div class="actions"><a class="btn primary" href="#">Start</a></div>
+            </li>
+
+            <li class="step">
+              <div class="k"><div class="num">8</div><h3>Build Conversation AI (Chatbots)</h3></div>
+              <p><span class="pill">30–45 minutes per client</span>Deploy a website chatbot that answers FAQs, captures leads, qualifies, and pushes bookings 24/7.</p>
+              <div class="why"><strong>Why This Matters:</strong> Chatbots produce fast visible wins (speed‑to‑lead, more inquiries), which builds trust and retention.</div>
+              <div class="actions"><a class="btn primary" href="#">Start</a></div>
+            </li>
+
+            <li class="step">
+              <div class="k"><div class="num">9</div><h3>Set Up Voice AI (Phone System)</h3></div>
+              <p><span class="pill">45–60 minutes per client</span>Configure AI phone agents to answer calls, qualify leads, book appointments, and escalate when needed.</p>
+              <div class="why"><strong>Why This Matters:</strong> Every missed call is lost revenue. Voice AI directly protects sales, so clients pay more and stay longer when you report results.</div>
+              <div class="actions"><a class="btn primary" href="#">Start</a></div>
+            </li>
+
+            <li class="step">
+              <div class="k"><div class="num">10</div><h3>Deliver Results & Scale Your Agency</h3></div>
+              <p><span class="pill">Ongoing</span>Track KPIs (calls answered, leads captured, appointments booked), report wins, optimize workflows, and build systems to grow to 20+ clients.</p>
+              <div class="why"><strong>Why This Matters:</strong> Retention is the engine of recurring revenue. Reporting outcomes + systemizing delivery creates referrals and predictable growth.</div>
+              <div class="actions"><a class="btn primary" href="#">Start</a></div>
+            </li>
+          </ol>
+
+          <div class="card" style="margin-top: 14px">
+            <div class="inner" style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px">
+              <div>
+                <h2 style="margin:0 0 6px;font-size:18px">Ready to get started?</h2>
+                <div class="small">Begin with Step 1 to set up your GoHighLevel account</div>
+              </div>
+              <a class="btn primary" href="#">Start Step 1</a>
+            </div>
+          </div>
+
+          <div class="actions" style="margin-top: 12px">
+            <a class="btn" href="https://www.gohighlevel.com/?fp_ref=praos-group87">Get Extended Free Trial</a>
+          </div>
+
+          <div class="footer" style="margin-top: 18px">© <span id="y"></span> Sisy Orobitg</div>
+        </div>
+      </div>
     </div>
-</body>
+
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
